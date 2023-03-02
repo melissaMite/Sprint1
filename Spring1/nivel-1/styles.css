@@ -145,12 +145,13 @@ body {
 }
 
 @media only screen and (max-width: 414px) {
+
     /* Para móviles */
     .c1-inside {
         width: 100%;
         margin: 0px 0px;
     }
-    
+
     .c11-inside {
         width: 100%;
         margin: 5px 0px;
@@ -160,24 +161,26 @@ body {
     #caja2-inside {
         height: 170px;
     }
+
     .cajon3 {
         flex-flow: column wrap;
         height: 90px;
         padding: 2.5%;
 
     }
+
     .c3-inside {
         width: 100%;
         margin: 0px 0px;
     }
-    
+
     .c31-inside {
         width: 100%;
         margin: 0px 0px;
     }
-    
+
     .c32-inside {
         height: 12px;
         width: 100%;
     }
-  }
+}
