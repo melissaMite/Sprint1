@@ -1,17 +1,11 @@
 body {
     max-width: 1200px;
-}
-
-.flex-container {
-
-    display: flex;
-    flex-direction: column;
+    padding: 1%;
 }
 
 .caja {
     border: 10px solid #000000;
     margin: 5px;
-    display: flexbox;
 }
 
 .caja2 {
@@ -25,7 +19,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 2%;
+    padding: 2.5%;
 }
 
 .c1-inside {
@@ -44,7 +38,7 @@ body {
 .cajon2 {
     background-color: #ff9646;
     border-top: 5px solid #000000;
-    padding: 2%;
+    padding: 2.5%;
 }
 
 
@@ -73,14 +67,14 @@ body {
     background-color: #e484fc;
     height: 12px;
     width: 45%;
-    margin: 10px 5px;
+    margin: 10px 0px;
 }
 
 .c31-inside {
     background-color: #e484fc;
     height: 12px;
     width: 45%;
-    margin: -10px 5px;
+    margin: -10px 0px;
 }
 
 .c32-inside {
@@ -99,14 +93,14 @@ body {
     background-color: #f7f773;
     height: 12px;
     width: 100%;
-    margin: 10px 10px;
+    margin: 10px 12px;
 }
 
 .c41-inside {
     background-color: #f7f773;
     height: 12px;
     width: 100%;
-    margin: -25px 10px;
+    margin: -25px 12px;
 }
 
 .cajon5 {
@@ -134,18 +128,56 @@ body {
     }
 
     .cajon4 {
-        height: 30px;
+        height: 40px;
         width: 100%;
     }
 
     .c4-inside {
         width: 100%;
-        margin: 1px 10px;
+        margin: 4px 10px;
     }
 
     .c41-inside {
         width: 100%;
-        margin: 5px 10px;
+        margin: 0px 10px;
     }
 
 }
+
+@media only screen and (max-width: 414px) {
+    /* Para móviles */
+    .c1-inside {
+        width: 100%;
+        margin: 0px 0px;
+    }
+    
+    .c11-inside {
+        width: 100%;
+        margin: 5px 0px;
+
+    }
+
+    #caja2-inside {
+        height: 170px;
+    }
+    .cajon3 {
+        flex-flow: column wrap;
+        height: 90px;
+        padding: 2.5%;
+
+    }
+    .c3-inside {
+        width: 100%;
+        margin: 0px 0px;
+    }
+    
+    .c31-inside {
+        width: 100%;
+        margin: 0px 0px;
+    }
+    
+    .c32-inside {
+        height: 12px;
+        width: 100%;
+    }
+  }
