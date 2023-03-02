@@ -11,7 +11,13 @@ body {
 .caja {
     border: 10px solid #000000;
     margin: 5px;
-    display:flexbox;
+    display: flexbox;
+}
+
+.caja2 {
+    border: 10px solid #000000;
+    margin: 5px;
+    display: flexbox;
 }
 
 .cajon1 {
@@ -48,14 +54,13 @@ body {
     width: 100%;
 }
 
-#caja2 { 
+#caja2-inside {
     display: flex;
     height: 70px;
     background-color: #fc849a;
-
 }
 
-.cajon3 { 
+.cajon3 {
     background-color: #afffda;
     width: 70%;
     border-right: 10px solid #000000;
@@ -63,13 +68,15 @@ body {
     flex-flow: row wrap;
     justify-content: space-around;
 }
-.c3-inside{
+
+.c3-inside {
     background-color: #e484fc;
     height: 12px;
     width: 45%;
     margin: 10px 5px;
 }
-.c31-inside{
+
+.c31-inside {
     background-color: #e484fc;
     height: 12px;
     width: 45%;
@@ -87,19 +94,58 @@ body {
     display: flex;
     flex-flow: row wrap;
 }
+
 .c4-inside {
     background-color: #f7f773;
     height: 12px;
     width: 100%;
     margin: 10px 10px;
 }
+
 .c41-inside {
-    background-color:#f7f773;
+    background-color: #f7f773;
     height: 12px;
     width: 100%;
-    margin: -25px 10px; 
+    margin: -25px 10px;
 }
+
 .cajon5 {
     background-color: #ffe341;
     height: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Para tabletas */
+    .caja2 {
+        border: 10px solid #fff022;
+    }
+
+    #caja2-inside {
+        height: 125px;
+        flex-flow: row wrap;
+    }
+
+    .cajon3 {
+        border-right: none;
+        width: 100%;
+        border-bottom: 10px solid #fff022;
+        height: 70px;
+    }
+
+    .cajon4 {
+        height: 30px;
+        width: 100%;
+    }
+
+    .c4-inside {
+        width: 100%;
+        margin: 1px 10px;
+    }
+
+    .c41-inside {
+        width: 100%;
+        margin: 5px 10px;
+    }
+
 }
